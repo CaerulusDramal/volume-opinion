@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    #layout {
+      position: relative;
+      transform-origin: top left;
+      top: 70px;
+    }
+
+    #blobs {
+      transform-origin: bottom left;
+      z-index: 2;
+      position: absolute;
+      top: 805px;
+      left: 400px;
+    }
+
+    .blob {
+      transform: translate(0%, -100%);
+    }
+
+    img {
+      position: absolute;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="layout">
+      <div id="blobs">
+
+      </div>
+    </div>
+
+    <div id="controls">
+      <p>
+        <label>Size:</label>
+        <input id="inputA" type="number" />
+
+        <label>Count:</label>
+        <input id="inputB" type="number" />
+
+        <label>Zoom (Mostly for convenience; lower to zoom out):</label>
+        <input id="inputZ" type="number" />
+      </p>
+      <p>
+        <label id="current">Current Code:</label>
+      </p>
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</html>
